@@ -14,4 +14,4 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
-          script: ./deploy-${{github.repository}}.sh
+          script: ./deploy-reverse-proxy.sh
