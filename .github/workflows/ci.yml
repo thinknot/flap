@@ -11,7 +11,7 @@ jobs:
       - uses: appleboy/ssh-action@v0.0.7
         with:
           host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USERNAME }}
+          username: deploy
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
           script: ./deploy-reverse-proxy.sh
