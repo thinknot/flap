@@ -14,4 +14,4 @@ jobs:
           username: deploy
           port: ${{ secrets.SSH_PORT }}
           key: ${{ secrets.SSH_KEY }}
-          script: ./deploy-reverse-proxy.sh
+          script: ./deploy-flap.sh
