@@ -4,9 +4,9 @@ on: push
 jobs:
   # No build step here because app uses a publically availably Docker image
   deploy:
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/main'
     name: Run remote deploy script
-    runs-on: ubuntu-latest
+    runs-on: debian-bullseye
     steps:
       - uses: appleboy/ssh-action@v0.0.7
         with:
