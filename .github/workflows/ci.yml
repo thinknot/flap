@@ -6,7 +6,7 @@ jobs:
   deploy:
     if: github.ref == 'refs/heads/main'
     name: Run remote deploy script
-    runs-on: debian-bullseye
+    runs-on: ubuntu-20.04
     steps:
       - uses: appleboy/ssh-action@v0.0.7
         with:
